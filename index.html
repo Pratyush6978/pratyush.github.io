@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #break {
+            color: rgb(43, 39, 39);
+        }
+
+        #time {
+            visibility: collapse;
+        }
+
+            /* body {
+                background-image: url("../static/Winter_ce_Cracked_B.png");
+                background-size: cover;
+                height: 100vh;
+            } */
+    </style>
+    <title>Routine</title>
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+                <span class="ml-3 text-xl">Khumbutse Routine</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" onclick="mondayShow()">Monday</a>
+                <a class="mr-5 hover:text-gray-900" onclick="tuesdayShow()">Tuesday</a>
+                <a class="mr-5 hover:text-gray-900" onclick="wednesdayShow()">Thursday</a>
+                <a class="mr-5 hover:text-gray-900" onclick="thursdayShow()">Wednesday</a>
+                <a class="mr-5 hover:text-gray-900" onclick="fridayShow()">Friday</a>
+            </nav>
+            <button class="inline-flex items-center bg-black-100 border-0 py-1 px-3 focus:outline-none hover:bg-black-200 rounded text-base mt-4 md:mt-0"><p id="dayRight"></p>
+              </button>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font">
+
+        <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+            <div
+                class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" id="day"></h1>
+                <p class="leading-relaxed text-base" id="routine"></p>
+            </div>
+
+            <div class="flex flex-col md:w-1/2 md:pl-12">
+                <div id="time"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="./routine.js"></script>
+    <script src="./clock.js"></script>
+</body>
+
+</html>
